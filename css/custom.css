@@ -15,10 +15,6 @@ Bootstrapious Boilerplate Template
 *
 */
 
-  .about-section .row > div {
-    margin-bottom: 1rem; /* Adjust this value as needed */
-  }
-
 
 @keyframes fadeInOut {
     0% {
