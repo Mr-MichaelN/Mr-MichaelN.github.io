@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             duration: 4,
         };
 
-        var counter1 = new CountUp('counter1', 0, 20, 0, options);
+        var counter1 = new CountUp('counter1', 0, 100, 0, options);
         var counter2 = new CountUp('counter2', 0, 50, 0, options);
         var counter3 = new CountUp('counter3', 0, 25, 0, options);
         var counter4 = new CountUp('counter4', 0, 100, 0, options);
