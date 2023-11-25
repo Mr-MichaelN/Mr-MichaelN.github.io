@@ -1,30 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script>
-      // Function to update the current time
-      function updateTime() {
-          // Get the current date and time
-          const now = new Date();
-
-          // Format the time as per your requirement
-          const hours = now.getHours().toString().padStart(2, '0');
-          const minutes = now.getMinutes().toString().padStart(2, '0');
-          const seconds = now.getSeconds().toString().padStart(2, '0');
-
-          // Display the time in a specific element (replace 'timeDisplay' with the actual ID of the element)
-          document.getElementById('timeDisplay').innerText = `${hours}:${minutes}:${seconds}`;
-
-          // Update the time every second
-          setTimeout(updateTime, 1000);
-      }
-
-      // Call the function when the document is fully loaded
-      document.addEventListener('DOMContentLoaded', updateTime);
-  </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mr-Cyber200 | Penetration Tester</title>
+    <title>Tech Specialist | Technology Consultant</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -50,7 +29,7 @@
   <body class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
     <div id="timeDisplay" style="position: fixed; top: 20px; left: 20px; font-size: 18px; color: red;"></div>
     <nav class="navbar navbar-expand-lg navbar-light py-4 py-lg-0 fixed-top bg-white border-bottom">
-      <div class="container"><a class="navbar-brand font-serif text-uppercase h6 text-primary fw-bold mb-0" href="#intro">Penetration Tester</a>
+      <div class="container"><a class="navbar-brand font-serif text-uppercase h6 text-primary fw-bold mb-0" href="#intro">Technology Consultant</a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -81,6 +60,7 @@
     </section>
     
     <!--  /- END INTRO SECTION-->
+    
     <!-- ABOUT SECTION -->
   
     <section id="about" class="about-section">
@@ -121,7 +101,7 @@
             <p>As a Cybersecurity Tutor at Internsify Africa, I have the privilege of mentoring and tutoring individuals who are new to the cybersecurity field. Through this role, I share my knowledge and expertise to help aspiring professionals develop their skills and understanding of the industry.</p>
         </section>
           </div>
-          <h2> Core Competence</h2>
+          <h2>Core Competence</h2>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
             <div class="mb-3">
               <p class="text-muted fw-light mb-0">Web Development</p>
@@ -144,6 +124,12 @@
               <p class="text-muted fw-light mb-0">Vulnerability Assessment</p>
               <div class="progress" style="height: 30px">
                 <div class="progress-bar opacity-8" role="progressbar" style="width: 98%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <p class="text-muted fw-light mb-0">Linux OS</p>
+              <div class="progress" style="height: 30px">
+                <div class="progress-bar opacity-9" role="progressbar" style="width: 98%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
             <div class="mb-3">
@@ -545,7 +531,7 @@
         </main>
         <div class="row">
           <div class="col-lg-7 mx-auto">
-            <form>
+            <form action="contact.php" method="post">
               <div class="row gy-3">
                 <div class="col-lg-6">
                   <input class="form-control" type="text" name="firstname" placeholder="Your firstname *" required>
@@ -581,7 +567,7 @@
           <div class="col-md-6 text-lg-start">
             <ul class="list-inline">
               <li class="list-inline-item"><a class="social-link facebook" href="https://www.facebook.com/mrcyber200" target="_blank"> <i class="fab fa-facebook-f"></i></a></li>
-              <li class="list-inline-item"><a class="social-link linkdedin" href="https://www.linkedin.com/in/nwarienne-michael-378b5a183" target="_blank"> <i class="fab fa-linkedin-in" style="font: size 98px; color:blue"></i></a></li>
+              <li class="list-inline-item"><a class="social-link linkdedin" href="https://www.linkedin.com/in/nwarienne-michael-378b5a183" target="_blank"> <i class="fab fa-linkedin-in" style="font: size 98px; color:whitesmoke"></i></a></li>
               <li class="list-inline-item"><a class="social-link twitter" href="https://twitter.com/mr_cyber200" target="_blank"> <i class="fab fa-twitter"></i></a></li>
               <li class="list-inline-item"><a class="social-link email" href="nwariennem@gmail.com" target="_blank"> <i class="fas fa-envelope"></i></a></li>
               <li class="list-inline-item"><a class="social-link github" href="https://github.com/Mr-cyber200" target="_blank"> <i class="fab fa-github"></i></a></li>
@@ -609,6 +595,7 @@
     <script src="vendor/mixitup/mixitup.js"></script>
    <!--<script src="js/leaflet.js"></script>-->
     <script src="js/theme.js"></script>
+    <script src="demo.js"></script>
     <!--<script src="js/demo.js"></script>-->
     <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
