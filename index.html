@@ -7,6 +7,37 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
+    <script>
+      document.querySelector('form').addEventListener('submit', async function (event) {
+          event.preventDefault();
+  
+          const formData = new FormData(event.target);
+          const formEndpoint = 'https://formspree.io/your-email-here'; // Replace with your Formspree endpoint
+  
+          try {
+              const response = await fetch(formEndpoint, {
+                  method: 'POST',
+                  body: formData,
+                  headers: {
+                      'Accept': 'application/json',
+                  },
+              });
+  
+              const result = await response.json();
+  
+              // Display feedback to the user
+              if (response.ok) {
+                  alert('Your message has been delivered successfully.');
+              } else {
+                  alert(`Error: ${result.error}`);
+              }
+          } catch (error) {
+              console.error('Error:', error);
+              alert('An error occurred while submitting the form.');
+          }
+      });
+  </script>
+  
     
     <!-- Google fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100">
@@ -531,7 +562,7 @@
         </main>
         <div class="row">
           <div class="col-lg-7 mx-auto">
-            <form action="contact.php" method="post">
+            <form action="https://formspree.io/f/xbjvvdld" method="post">
               <div class="row gy-3">
                 <div class="col-lg-6">
                   <input class="form-control" type="text" name="firstname" placeholder="Your firstname *" required>
